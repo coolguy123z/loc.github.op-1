@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/secondWebsite.css">
+    <script
+      src="https://kit.fontawesome.com/bfc274e795.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script src="/mysecondweb.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("TuSS9DPZtQdMn4e8-");
+   })();
+</script>
+</head>
+<body>
+    <section id="landing-page" onmousemove="moveBackground(event)">
+        <nav>
+            <figure>
+                <img  id="personal-logo" src="./img/LP_(Logo).png" alt="">
+            </figure>
+
+            <ul class="nav_link--list">
+                <li class="nav_link click">
+                    <a href="# " class="nav_link--anchor link_hover-effect link_hover-effect--black" onclick="toggleModal()">About</a>
+                </li>
+                <li class="nav_link click">
+                    <a href="#projects" class="nav_link--anchor link_hover-effect link_hover-effect--black">Project</a>
+                </li>
+                <li class="nav_link click">
+                    <a href="# " class="nav_link--anchor link_hover-effect link_hover-effect--black">Contact</a>
+                </li>
+                <li class="nav_link click">
+                    <a href="# " class="nav_link--anchor link_hover-effect link_hover-effect--black"><i class="fa-regular fa-moon" onclick="toggleContrast()"></i></a>
+                </li>
+            </ul>
+        </nav>
+        <header class="header">
+<div class="header_content">
+    <h1 class="title">Hey</h1>
+    <h1 class="title orange">I'm Loc</h1>
+    <p class="header_para">I'm a <b class="orange"> Frontend Software Developer </b> with a strong passion for building website <br>
+    Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>
+    </p>
+    <div class="social-list">
+        <a href="https://www.linkedin.com/in/loc-phan-61638625b?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BOF%2F8KUdsT2CaCHeUtDvidw%3D%3D" class="social_link click" target="_blank">
+            <i class="fa-brands fa-linkedin fa-fade"
+            style="--fa-animation-duration: 2s" ></i>
+          </a>
+
+          <a href="" class="social_link click ">
+            <i class="fa-brands fa-github fa-fade"
+            style="--fa-animation-duration: 3s"></i>
+          </a>
+         
+          <a href="./resume (2).pdf" target="_blank" class="social_link click ">
+            <i
+              class="fa-sharp fa-solid fa-file fa-fade"
+              style="--fa-animation-duration: 4s"
+              
+            ></i>
+          </a>
+
+        
+    </div>
+</div>
+        </header>
+        <a href="#">
+        <button class="mail_btn click" onclick="toggleModal()" >
+            
+           
+            <i class="fa-solid fa-envelope "> </i>
+           
+        </button>
+        </a>
+        <a href="#projects" class="scroll">
+            <div class="scroll_icon click">
+            
+        </div></a>
+
+        <div class="modal">
+            <div class="modal_half modal_about">
+                <H3 class="modal_title modal_title_about">Here's a bit about me</H3>
+                <h4 class="modal_subtitle modal_subtitle_about">Frontend Software Engineer</h4>
+                <p modal_para>I'm a 19 year old Sophomore college student at NOVA with a  <b class="orange">strong passion </b> to develop websites with <b class="orange"> great user experiences.</b>
+                    <br>
+                    I am currently working on developing my skill sets with <b class="orange"> difficult engineering problems </b> and learn from a team consisting of some of the most <b class="orange"> talented </b> and <b class="orange"> experienced </b> and experienced software engineer everyday
+                </p>
+
+                <div class="modal_languages">
+                    <div class="language">
+                      <figure class="language-img-wrapper">
+                        <img
+                          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                          class="language-img"
+                          alt="HTML"
+                        />
+                      </figure>
+                      <span class="language-name">HTML</span>
+                    </div>
+        
+                    <div class="language">
+                      <figure class="language-img-wrapper">
+                        <img
+                          src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                          class="language-img"
+                          alt="CSS"
+                        />
+                      </figure>
+                      <span class="language-name">CSS</span>
+                    </div>
+        
+                    <div class="language">
+                      <figure class="language-img-wrapper">
+                        <img
+                        src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png""
+                        class="language-img" alt="JAVA">
+                      </figure>
+                      <span class="language-name">Java</span>
+                    </div>
+        
+        
+                 
+        
+                    
+        
+                    <div class="language">
+                      <figure class="language-img-wrapper">
+                        <img
+                          src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+                          class="language-img"
+                          alt="React"
+                        />
+                      </figure>
+                      <span class="language-name">React</span>
+                    </div>
+        
+                    
+                  </div>
+            
+            </div>
+            <div class="modal_half modal_contact">
+                <i class="fas fa-times modal_exit click" onclick="toggleModal()"></i>
+                <h3 class="modal_title modal_title--contact" > Let's have a chat!</h3>
+                <h4 class="modal_subtitle modal_subtitle--contact">I'm currently open to new opportunities</h4>
+                <form onsubmit="contact(event)" id="contact_form">
+                    <div class="form_item">
+                        <label class="form_item--label"  >Name</label>
+                        <input type="text" class="input" name="user_name"  >  
+                    </div>
+                    <div class="form_item">
+                        <label class="form_item--label"  >Email</label>
+                        <input type="email" class="input" name="user_ email"  required>  
+                    </div>
+                    <div class="form_item">
+                        <label class="form_item--label">Message</label>
+                        <textarea type="text" class="input" name="message"  >  </textarea>    
+                    </div>
+                    <button id="contact_submit" class="form_submit">Send it my way</button>
+                </form>
+                <div class="modal_overlay modal_overlay--loading"> <i class="fas fa-spinner"></i></div>
+                <div class="modal_overlay modal_overlay--success">Thanks for the message ! Looking forward to speaking to you </div>
+            </div>
+            
+        </div>
+        <img src="./img/semi circle.svg" class="shape shape--0" alt="">
+        <img src="./img/triangle.svg" class="shape shape--1" alt="">
+        <img src="./img/squiggly.svg" class="shape shape--2" alt="">
+        <img src="./img/circle.svg" class="shape shape--3" alt="">
+        <img src="./img/semi circle.svg" class="shape shape--4" alt="">
+        <img src="./img/squiggly.svg" class="shape shape--5" alt="">
+        <img src="./img/semi circle.svg" class="shape shape--6" alt="">
+        <img src="./img/triangle.svg" class="shape shape--7" alt="">
+        <img src="./img/circle.svg" class="shape shape--8" alt="">
+    </section>
+
+
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section_title">
+                    Here are some of my <span class="orange">projects</span>
+                </h1>
+                <ul class="project_list">
+                    <li class="project">
+                       
+                        <div class="project_wrapper">
+                            <img src="./img/Anya-Forger-Featured.avif" class="project_img" alt="">
+                            <div class="project_wrapper--bg"></div>
+                            <div class="project_description">
+                                <h3 class="project_description-title">Anya</h3>
+                                <h4 class="project_description-subtitle">Html, CSS , JavaScript</h4>
+                                <p class="project_description-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quisquam porro illum itaque doloremque numquam sunt. Obcaecati placeat at magni accusantium officiis assumenda sunt sed magnam, cum dicta voluptatibus ipsa recusandae ullam minima vitae explicabo molestias. Incidunt fugit nulla, deserunt sed cumque illum, aliquam ducimus necessitatibus perspiciatis amet rem? Rem!</p>
+                                <div class="project_description--links">
+                                    <a href="" class="project_description--link"><i class="fa-brands fa-github "
+                                        "></i></a>
+                                        <a href="" class="project_description--link"><i class="fas fa-link"
+                                            "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+
+                    <li class="project">
+                       
+                        <div class="project_wrapper">
+                            <img src="./img/Anya-Forger-Featured.avif" class="project_img" alt="">
+                            <div class="project_wrapper--bg"></div>
+                            <div class="project_description">
+                                <h3 class="project_description-title">Anya</h3>
+                                <h4 class="project_description-subtitle">Html, CSS , JavaScript</h4>
+                                <p class="project_description-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quisquam porro illum itaque doloremque numquam sunt. Obcaecati placeat at magni accusantium officiis assumenda sunt sed magnam, cum dicta voluptatibus ipsa recusandae ullam minima vitae explicabo molestias. Incidunt fugit nulla, deserunt sed cumque illum, aliquam ducimus necessitatibus perspiciatis amet rem? Rem!</p>
+                                <div class="project_description--links">
+                                    <a href="" class="project_description--link"><i class="fa-brands fa-github "
+                                        "></i></a>
+                                        <a href="" class="project_description--link"><i class="fas fa-link"
+                                            "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="project">
+                       
+                        <div class="project_wrapper">
+                            <img src="./img/Anya-Forger-Featured.avif" class="project_img" alt="">
+                            <div class="project_wrapper--bg"></div>
+                            <div class="project_description">
+                                <h3 class="project_description-title">Anya</h3>
+                                <h4 class="project_description-subtitle">Html, CSS , JavaScript</h4>
+                                <p class="project_description-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quisquam porro illum itaque doloremque numquam sunt. Obcaecati placeat at magni accusantium officiis assumenda sunt sed magnam, cum dicta voluptatibus ipsa recusandae ullam minima vitae explicabo molestias. Incidunt fugit nulla, deserunt sed cumque illum, aliquam ducimus necessitatibus perspiciatis amet rem? Rem!</p>
+                                <div class="project_description--links">
+                                    <a href="" class="project_description--link"><i class="fa-brands fa-github "
+                                        "></i></a>
+                                        <a href="" class="project_description--link"><i class="fas fa-link"
+                                            "></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>   
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container ">
+            <div class="row footer_row">
+            <figure>
+            <img src="./img/LP_(Logo).png" class="footer_logo_img" alt="">
+        </figure>
+
+        <div class="footer_social-list">
+            <a href="" class=" footer_social--link link_hover-effect link_hover-effect--white"> Github</a>
+            <a href="" class=" footer_social--link link_hover-effect link_hover-effect--white"> LinkedIn</a>
+            <a href="#" class=" footer_social--link link_hover-effect link_hover-effect--white" onclick="toggleModal()"> Contact</a>
+            <a href="./resume (2).pdf" target="_blank" class=" footer_social--link link_hover-effect link_hover-effect--white"> Resume</a>    
+        </div>
+
+        <div class="footer_copyright">Copyright &copy; 2023 Loc Phan</div>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
